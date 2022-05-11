@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <style>/* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+    </style>
+    <title>remodel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+    <script src="https://kit.fontawesome.com/e5ba01caee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="remodel-header">
+        <nav>
+            <a href="remodel.html"><img src="img/tl custom logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class ="text-box">
+        <h1> Removal and Remodel </h1>
+    </div>
+    </section>
+<!--about us content -->
+
+<section class="remodel-us">
+    <div class="row">
+        <div class="remodel-col">
+        <h1> we are the greatest company</h1>
+        <p>happy to help</p>
+        </div>
+        <div class="remodel-col"></div>
+    </div>
+</section>
+
+<!--footer-->
+    <section class="footer">
+        <p>Dream of your custom design And let our services make it Come true.</p> 
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+        <p>since 2019</p>
+        <p>made with <i class="far fa-heart"></i>by mantiscoder.com</p>
+    </section>
+<!----JavaScript for toggle Menu---->
+       <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>

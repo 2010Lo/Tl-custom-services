@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <style>/* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+    </style>
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+    <script src="https://kit.fontawesome.com/e5ba01caee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="img/tl custom logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class ="text-box">
+        <h1> CONTACT US </h1>
+    </div>
+    </section>
+<!--contact us  -->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d107134.20529238755!2d-96.4032834854166!3d32.95249011059408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1652143516232!5m2!1sen!2sus" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-building"></i>
+                <span>
+                    <h5>address</h5>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <span>
+                    <h5>903-347-3971</h5>
+                    <p>monday to saturday, 9am to 6pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-mail-bulk"></i>
+                <span>
+                    <h5>TLcustomservices2020@gmail.com</h5>
+                    <p>email us</p>
+                </span>
+            </div>
+        <div class="contact-col">
+
+            <form action="https://formsubmit.co/Tlcustomservices2020@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" placeholder="Service needed" required>
+                <textarea rows="10" name="description" placeholder= " Please Describe" required ></textarea>
+                <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">
+                <input type="hidden" name="_autoresponse" value="Thank you for considering us to serve you.
+                A representative will respond back a soon as possible.">
+                <input type="hidden" name="_webhook" value="https://yourdomain.co/your-webhook">
+                <button type="submit" class="hero-btn red-btn"> Send Message</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+<!--footer-->
+    <section class="footer">
+        <p>Dream of your custom design And let our services make it Come true.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+        <p>since 2019</p>
+        <p>made with <i class="far fa-heart"></i>by mantiscoder.com</p>
+    </section>
+<!----JavaScript for toggle Menu---->
+       <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
